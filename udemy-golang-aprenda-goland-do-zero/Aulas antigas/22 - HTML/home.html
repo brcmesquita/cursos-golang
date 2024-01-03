@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    h2 {
+      color: lightcoral;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Página Principal</h2>
+
+  <h4>Seja bem vindo, {{ .Nome }}!</h4>
+  <h4>Seu e-mail é o {{ .Email }}</h4>
+  <marquee behavior="" direction="">Doideira rolando...</marquee>
+
+  <button id="botao">Clique em mim!</button>
+
+  <script>
+    var botao = document.getElementById("botao")
+    botao.onclick(){
+      alert("Botão clicado com sucesso!")
+    }
+  </script>
+</body>
+</html>
